@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang ="en">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hari's Marriage </title>
+        <style>
+            .dark-mode-toggle {
+            position: absolute;
+            top: -1px;
+            right: 10px;
+            background: #222;
+            color: #fff;
+            border: container;
+            border-radius: 10px;
+            padding: 8px 11px;
+            cursor: pointer;
+            font-size: 04px;
+            z-index: 1000;
+            transition: container 1.5s, color 1.5s;
+            }
+            .dark-mode-toggle:hover {
+            background: #080707;
+            }
+            body.dark-mode {
+            background-color: #181818 !important;
+            color: #f1f1f1 !important;
+            }
+            body.dark-mode h1, body.dark-mode h2, body.dark-mode h4, body.dark-mode strong, body.dark-mode b {
+            color: #f8f8f8 !important;
+            }
+            body.dark-mode a {
+            color: #7ecfff !important;
+            }
+            body.dark-mode table, body.dark-mode th, body.dark-mode td {
+            border-color: #444 !important;
+            color: #f1f1f1 !important;
+            }
+        </style>
+        <script>
+            function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+            localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+            }
+            window.onload = function() {
+            if (localStorage.getItem('darkMode') === 'true') {
+                document.body.classList.add('dark-mode');
+            }
+            }
+        </script>
+        <button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙  </button>
+        <link rel="icon" href="sheik.jpeg" tye="image/x-icon" >
+        <link rel="stylesheet" href="main.css">
+        <!-- Settings Toggle Button -->
+        <button id="settings-toggle" style="position: absolute; top: 10px; left: 10px; z-index: 1001;">⚙️ Settings</button>
+        <!-- Settings Panel -->
+        <div id="settings-panel" style="display:none; position:fixed; top:50px; left:10px; background:#fff; color:#222; border:1px solid #ccc; border-radius:8px; padding:16px; z-index:1002; min-width:200px;">
+            <h3>Settings</h3>
+            <label>
+            <input type="checkbox" id="darkModeSetting">
+            Enable Dark Mode
+            </label>
+            <br>
+            <label>
+            Font Size:
+            <select id="fontSizeSetting">
+                <option value="16px">Default</option>
+                <option value="18px">Large</option>
+                <option value="20px">Extra Large</option>
+            </select>
+            </label>
+            <br>
+            <label>
+            Theme Color:
+            <input type="color" id="themeColorSetting" value="#297cd0">
+            </label>
+            <br><br>
+            <button id="close-settings">save</button>
+        </div>
+        <script>
+            // Toggle settings panel
+            document.addEventListener('DOMContentLoaded', function() {
+            const settingsToggle = document.getElementById('settings-toggle');
+            const settingsPanel = document.getElementById('settings-panel');
+            const closeSettings = document.getElementById('close-settings');
+            const darkModeSetting = document.getElementById('darkModeSetting');
+            const fontSizeSetting = document.getElementById('fontSizeSetting');
+            const themeColorSetting = document.getElementById('themeColorSetting');
+
+            // Show/hide settings panel
+            settingsToggle.onclick = () => {
+                settingsPanel.style.display = settingsPanel.style.display === 'none' ? 'block' : 'none';
+            };
+            closeSettings.onclick = () => {
+                settingsPanel.style.display = 'none';
+            };
+
+            // Load settings from localStorage
+            if(localStorage.getItem('darkMode') === 'true') darkModeSetting.checked = true;
+            if(localStorage.getItem('fontSize')) document.body.style.fontSize = localStorage.getItem('fontSize');
+            if(localStorage.getItem('fontSize')) fontSizeSetting.value = localStorage.getItem('fontSize');
+            if(localStorage.getItem('themeColor')) {
+                document.documentElement.style.setProperty('--theme-color', localStorage.getItem('themeColor'));
+                themeColorSetting.value = localStorage.getItem('themeColor');
+            }
+
+            // Dark mode toggle
+            darkModeSetting.onchange = function() {
+                document.body.classList.toggle('dark-mode', this.checked);
+                localStorage.setItem('darkMode', this.checked);
+            };
+
+            // Font size change
+            fontSizeSetting.onchange = function() {
+                document.body.style.fontSize = this.value;
+                localStorage.setItem('fontSize', this.value);
+            };
+
+            // Theme color change
+            themeColorSetting.oninput = function() {
+                document.documentElement.style.setProperty('--theme-color', this.value);
+                localStorage.setItem('themeColor', this.value);
+            };
+            });
+        </script>
+        <style>
+            :root {
+            --theme-color: #297cd0;
+            }
+            h1, h2, h4, strong, b {
+            color: var(--theme-color);
+            }
+        </style></select></div>
+        <style>
+            body {
+                background-color: #ad1e1e;
+                text-align: center;
+                font-family: Arial, sans-serif;
+            }
+            h1 {
+                color: #07eae6;
+            }
+            h1 {
+                color: #297cd0;
+            }
+             body {
+                background-color: #ffffff;
+                text-align: center;
+                font-family: Arial, sans-serif;
+            }
+            h4 {
+                color: #185ca0;}
+            </style>
+    </head>
+    <body>
+        <h1 style="color: rgb(120, 143, 218);">
+            Congratulations Hariharasuthian For Your Marriage Life!
+        </h1
+        >
+        <h4>
+            Everything will be fine in your life.
+            You will be a good husband and a good father.
+            You will be a good son-in-law.<br>
+            You will be a good friend.
+        </h4>
+        <p>
+            Hariharasuthan is pursuing b.com international finance at jamal mohamed college.
+
+            He is a good student and a good friend.
+            Hariharasuthan's interest lies on software development,tech industry,sex industry and ultimately porn industry globalization.
+
+        </p>
+        <p> His mission is to accomplish and explore porn industry that impacting on several aspects like every country's economicl and political impact,personal revolution,industrial economy!
+
+    </body>
+    <body>
+        <h2 style="color: rgba(103, 25, 230, 0.967);">Marriage Life</h2>
+        <p>Marriage is a sacred bond between two individuals, built on love, trust, and mutual respect. It is a journey of companionship, where both partners support each other through thick and thin. In marriage, communication is key, as it helps to resolve conflicts and strengthen the relationship. </p>
+        <p>As you embark on this new chapter of your life, remember to cherish each moment together and always strive to grow as individuals and as a couple.</p>
+   <strong>Hariharasuthan's List of Interests</strong>
+         <ol>
+            <li>lesbian</li>
+            <li>Gay</li>
+            <li>Curcold</li> </ol>
+         </ol>
+         <b>Hariharasuthan's base of dream!</b>
+        <ul>
+            <li>Hari Leone</li>
+            <li>Blossom sudhan</li>
+            <li>Baandu hari</li>
+            <li>To be a good friend!</li>
+        </ul>      
+        <strong>
+         <p>Let's share Hariharasutha's Marriage invitation along with Gifts</p>
+         </strong>
+         <p style="color: rgb(11, 162, 232);">We are excited to announce the marriage of Hariharasuthan and his beloved partner. We invite you to join us in celebrating this joyous occasion. Your presence and blessings mean the world to us.</p>
+         <img src="WhatsApp Image 2025-05-10 at 17.46.13.jpeg" alt="Marriage Invitation" width="300" height="350">
+         
+         <p>
+              <strong><b>
+                 Gifts & Tributes
+              </b></strong>
+            <ul>
+                <li>Cash</li>
+                <li>Gold</li>
+                <li>Silver</li>
+                <li>Gadgets</li>
+            </ul>
+         </p>
+         <img src="WhatsApp Image 2025-05-10 at 21.08.20.jpeg" alt="Marriage Invitation" width="300" height="350">
+            <p>We are looking forward to celebrating this special day with you. Thank you for being a part of our lives!</p>   
+            <img src="WhatsApp Image 2025-05-11 at 09.58.32.jpeg" alt="Marriage Invitation" width="300" height="350">
+            <p>We are looking forward to celebrating this special day with you. Thank you for being a part of our lives!</p>
+            <p>
+                Hariharasuthan's best Gay friends/ Duos!
+            </p>
+            <img src="sheik.png" alt="image" width="200" height="250">
+             <img src="hari.png" alt="image" width="200" height="250">
+<p>
+    For more information, please contact us at:
+    <a href="https://www.pornhub.com"> Click here to see Hari's horny Webpage!</a>
+</p>
+       
+<p>
+   <b>Further information about the hari & Sheik!<b>
+</p>
+<table>
+            <tr>
+                <th>penis</th>
+                <th>size</th>
+            </tr>
+            <tr>
+                <td>black</td>
+                <td>1 inch</td>
+            </tr>
+            <tr>
+                <td>rose</td>
+                <td>0.3 inch</td>
+            </tr>
+            <tr>
+                <td>pink</td>
+                <td>0.7 inch</td>
+            </tr>
+            <b>
+            <form>
+                <input type="text" placeholder="Full name" name="name">
+                <input type="submit" >                
+            </form>
+            </b>
+            </table>
+                
+            
+            <b>your  penis Favourite color?
+
+                </b>
+<div>
+                 <input name="color" type="radio" value="red" style="color: rgb(220, 15, 32);"> red
+                 <input name="color" type="radio" value="black"style="color: rgb(0, 0, 0);"> black
+                 <input name="color" type="radio" value="rose" style="color: rgb(221, 14, 159);"> rose
+                 <input name="color" type="radio" value="pink" style="color: rgb(206, 28, 222);"> pink
+                 <input name="country" lists="countries" placeholder=" yourcountry"> </div>
+                 <div> 
+                <input type="submit" value="submit">
+                <datalist id="countries">
+                    <option value="abbas">
+                    <option value="abdul rauf">
+                    <option value="nakkiran">
+                    <option value="sheik thimmath">
+                    <option value="ziafar">
+                    <option value="hariharasuthan">
+                    <option value="gokul">
+                    <option value="barath">
+                    <option value="Argentina">
+                    <option value="Armenia">
+                    <option value="Australia">
+                    <option value="Austria">
+                    <option value="Azerbaijan"> I
+                    <option value="Bahamas"> 
+                    <option value="Bahrain">
+                    <option value="Bangladesh"> 
+                    <option value="Barbados"> 
+                    <option value="Belarus"> 
+                    <option value="Belgium"> 
+                    <option value="Belize">
+                     <option value="Benin">
+            </div>
+            <p> <img src="uvais.png" alt="Marriage Invitation" width="350" height="350">
+        </p>
+                 <p>
+                    <img src="instagram.png" alt="instagram"  width="65" height="50">
+            </p>
+            <a href="https://www.instagram.com/u_vais2king786?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" width="400" height="400"> Click Here to see Uvais's Profile</a>
+        </p>
+        <p>
+            <img src="hari insta.jpg" alt="Marriage Invitation" width="350" height="350">
+        </p>
+              <img src="instagram.png" alt="instagram"  width="65" height="50"> </p>
+               <a href="https://www.instagram.com/_hari_offl__07/?utm_source=ig_web_button_share_sheet" width="400" height="400"> Click Here to see Hariharasudhian's Profile</a>
+
+
+        
+        </body>
+    
+   
+    
